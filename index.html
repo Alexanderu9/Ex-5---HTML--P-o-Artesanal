@@ -4,84 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="">
     <title>Pão Artesanal</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="assets/img/logo.png" alt="logo" width="400px">
-        </div>
-        <nav>
-            <h1> Pão Artesanal Alexander</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <img src="assets/img/panes.png" alt="Pães" width="700px">
-
-        <div>
-            <h2><strong>O sabor do verdadeiro pão artesanal!</strong></h2>
-            <p>Feito com ingredientes frescos e naturais, nosso pão artesanal traz o sabor e a textura que você nunca
-                experimentou antes. Sinta o cheiro e o sabor de pães fresquinhos feitos com amor.</p>
-        </div>
-    </section>
-    <div>
-        <h3> Por que escolher o nosso pão? </h3>
-        <ul>
-            <li>Sem conservantes</li>
-            <li>Ingredientes naturais</li>
-            <li>Preparado com receitas tradicionais</li>
-            <li>Fresco e recém-saído do forno</li>
-        </ul>
-        <p>///////////////////////////////////////////////////////////////////////////////////////////////////////////
-        </p>
-        <h4>Não perca a chance de saborear o melhor pão artesanal da cidade! Faça seu pedido agora!</h4>
-        <button>Peça Agora e Experimente o Sabor Único!!</button>
-        <p>///////////////////////////////////////////////////////////////////////////////////////////////////////////
-        </p>
-    </div>
-    <div>
-        <h2>Sobre nós</h2>
-        <p> No Pão Atersanal Alexander, acreditamos que o pão vai muito além de um simples alimento. É uma tradição, um
-            aconchego e uma verdadeira arte. Nossa paixão pela panificação artesanal começou com o desejo de resgatar o
-            sabor autêntico e a qualidade dos pães feitos à mão, utilizando apenas ingredientes naturais e selecionados.
-
-            Cada pão que sai do nosso forno é preparado com dedicação, respeitando o tempo de fermentação e as melhores
-            técnicas de panificação. Não usamos conservantes nem ingredientes artificiais – apenas farinha de alta
-            qualidade, fermentação natural e muito amor em cada fornada.
-
-            Nosso compromisso é oferecer pães que nutrem o corpo e aquecem o coração, proporcionando uma experiência
-            única a cada mordida. Seja para um café da manhã especial, um lanche delicioso ou para acompanhar uma
-            refeição, nossos pães artesanais trazem sabor e qualidade incomparáveis.
-
-            Venha conhecer o verdadeiro sabor do pão feito com carinho e tradição. Experimente e sinta a diferença!</p>
-    </div>
-
-    <div>
-        <h3>
-            Contato
-        </h3>
-        <ul>
-            <li>
-                <h4>Informaçoes de contato</h4>
+    <div id="contenedor">
+        <header>
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="logo" width="200px">
+            </div>
+            <nav>
+                <h1 id="titulo">Pão Artesanal Alexander</h1>
                 <ul>
-                    <li>Telefone:(XX)-XXX-XXXX</li>
-                    <li>E-mail: pãesalexander@gmail.com</li>
-                    <li>Redes Sociais: @PãoArtesanal</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
-            </li>
-            <li>Endereço: Rua São Pão - Iririu, Florianopolis- SC</li>
-        </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <img src="assets/img/panes.png" alt="Pães" width="400px">
+            <div>
+                <h2><strong>O sabor do verdadeiro pão artesanal!</strong></h2>
+                <p>Feito com ingredientes frescos e naturais, nosso pão artesanal traz o sabor e a textura que você nunca
+                    experimentou antes. Sinta o cheiro e o sabor de pães fresquinhos feitos com amor.</p>
+            </div>
+        </section>
+
+        <div class="beneficios">
+            <h3>Por que escolher o nosso pão?</h3>
+            <ul>
+                <li>Sem conservantes</li>
+                <li>Ingredientes naturais</li>
+                <li>Preparado com receitas tradicionais</li>
+                <li>Fresco e recém-saído do forno</li>
+            </ul>
+            <h4>Não perca a chance de saborear o melhor pão artesanal da cidade! Faça seu pedido agora!</h4>
+            <button><a href="#contato">Peça Agora e Experimente o Sabor Único!!</a></button>
+        </div>
+
+        <div class="sobre-nos" id ="sobre">
+            <h2>Sobre nós</h2>
+            <p>No Pão Artesanal Alexander, acreditamos que o pão vai muito além de um simples alimento. É uma tradição, um
+                aconchego e uma verdadeira arte. Nossa paixão pela panificação artesanal começou com o desejo de resgatar o
+                sabor autêntico e a qualidade dos pães feitos à mão...</p>
+                <button><a href="#titulo">Retornar</a></button>
+        </div>
+
+        <div class="contato" id="contato">
+            <h3>Contato</h3>
+            <h4>Informações de contato</h4>
+            <ul>
+                <li>Telefone: (XX)-XXX-XXXX</li>
+                <li>E-mail: pãesalexander@gmail.com</li>
+                <li>Redes Sociais: @PãoArtesanal</li>
+            </ul>
+            <h4>Endereço</h4>
+            <p>Rua São Pão - Iririu, Florianópolis - SC</p>
+            <button><a href="#titulo">Retornar</a></button>
+        </div>
+
+        <footer>
+            <p><em> &copy; 2025 O melhor pão, com todos os Direitos Reservados </em></p>
+        </footer>
     </div>
-    <footer>
-        <p>&copy; 2025 O melhor pão, com todos os Direitos Reservados</p>
-    </footer>
 </body>
 
 </html>

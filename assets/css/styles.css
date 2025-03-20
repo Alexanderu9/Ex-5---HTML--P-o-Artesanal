@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(238, 181, 95, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "beneficios"
+        "sobre-nos"
+        "contato"
+        "footer";
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🔹 Header */
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffcc66;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* 🔹 Hero Section */
+.hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 🔹 Benefícios */
+.beneficios {
+    grid-area: beneficios;
+    background-color: #ffeb99;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
+
+/* 🔹 Sobre Nós */
+.sobre-nos {
+    grid-area: sobre-nos;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 🔹 Contato */
+.contato {
+    grid-area: contato;
+    background-color: #ffcc66;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 🔹 Footer */
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
