@@ -11,7 +11,7 @@ body {
         "header"
         "hero"
         "beneficios"
-        "sobre-nos"
+        "sobreNos"
         "contato"
         "footer";
     grid-template-columns: 1fr;
@@ -21,7 +21,7 @@ body {
     padding: 20px;
 }
 
-/* 🔹 Header */
+
 header {
     grid-area: header;
     display: flex;
@@ -30,6 +30,21 @@ header {
     background-color: #ffcc66;
     padding: 15px;
     border-radius: 10px;
+}
+
+#contenedorlink {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 70px;
+}
+
+#titulo {
+    font-size: 28px;
+    margin: 0;
 }
 
 nav ul {
@@ -45,7 +60,10 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* 🔹 Hero Section */
+nav ul li a:hover {
+    color: rgb(247, 21, 21);
+}
+
 .hero {
     grid-area: hero;
     display: grid;
@@ -54,7 +72,7 @@ nav ul li a {
     gap: 20px;
 }
 
-/* 🔹 Benefícios */
+
 .beneficios {
     grid-area: beneficios;
     background-color: #ffeb99;
@@ -83,15 +101,15 @@ button:hover {
     background-color: #e68a00;
 }
 
-/* 🔹 Sobre Nós */
-.sobre-nos {
-    grid-area: sobre-nos;
+
+.sobreNos {
+    grid-area: sobreNos;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
 }
 
-/* 🔹 Contato */
+
 .contato {
     grid-area: contato;
     background-color: #ffcc66;
@@ -99,15 +117,16 @@ button:hover {
     border-radius: 10px;
 }
 
-/* 🔹 Footer */
+
 footer {
     grid-area: footer;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     background-color: #333;
     color: white;
     padding: 15px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
